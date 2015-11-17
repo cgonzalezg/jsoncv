@@ -11,12 +11,12 @@ mixin objectData(objectData)
             +rowData(key, objectData[key])
           - else
             - if (objectData[key].constructor === Array  )
-              .array-item.indentation-container
+              .array-item.indentation-container.collapsed
                 span.attribute "#{key}"
                 span.control.inline :
                 +JSONArray(objectData[key])
             - else
-              .array-item.indentation-container
+              .array-item.indentation-container.collapsed
                 span.attribute "#{key}"
                 span.control.inline : 
                 +objectData(objectData[key])
