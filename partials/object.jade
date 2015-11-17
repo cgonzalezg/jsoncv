@@ -1,0 +1,25 @@
+include row
+include jsonarray
+mixin objectData(objectData)
+  span.control.inline {
+    .row.indentation-content
+      .indentation.indentation-toggle
+        .indentation-line
+      .col-xs-12.col-sm-11.col-md-11.col-lg-11.col-xs-offset-0.col-sm-offset-1.col-md-offset-1.col-lg-offset-1.hash
+        - for (var key in objectData)
+          - if (objectData[key].constructor === Array  )
+            .array-item.indentation-container
+              span.attribute "#{key}"
+              span.control.inline :
+              +JSONArray(objectData[key])
+          - if (typeof objectData[key] === 'string'  )
+            +rowData(key, objectData[key])
+          - else
+            .array-item.indentation-container
+              span.attribute "#{key}"
+              span.control.inline : 
+              +objectData(objectData[key])
+  span.indentation-ellipsis.indentation-toggle ...
+  span.control.inline }
+  span.control.inline ,
+//- inject object
