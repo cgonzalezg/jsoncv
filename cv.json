@@ -1,0 +1,21 @@
+{
+  "personal_data": {
+    "name": "Cesar Gonzalez Gonzalez",
+    "address": "Konstanzerstrasse 13, 8280 Kreuzlingen",
+    "tel": "004917699151664",
+    "email": "cesargonz1984@gmail.com",
+    "nationality": "Spanish"
+  },
+  "sumary": ["responsibility", "new ideas", "team player", "SQL", "Oracle PL/SQL", "Java",
+    "software development", "UML", "software engineering", "Linux", "Unix", "Scala", "Play framework",
+    "Elasticsearch", "MongoDB", "NoSql", "RabbitMQ", "SOA", "Test Driven Development", "Tomcat", "SBT",
+    "Maven", "git", "Scrum", "docker", "mesos", "marathon", "nodejs", "rancher.io", "microservices", "12 factor",
+    "loopback", "scalability", "devops"
+  ],
+  "experience": {
+    "it_engineering": {
+      "start": "June/2015",
+      "resume": "Warehouse Management Software using Nodejs and the framework Loopback with MongoDB."
+    }
+  }
+}

@@ -1,15 +1,14 @@
 mixin JSONArray(data)
-  div
-    span.control.inline [
-    .row.indentation-content
-      .indentation.indentation-toggle
-        .indentation-line
-      .col-xs-12.col-sm-11.col-md-11.col-lg-11.col-xs-offset-0.col-sm-offset-1.col-md-offset-1.col-lg-offset-1
-        - for item in data
-          div
-            span.value "#{item}"
-            span.control.inline ,
-    span.indentation-ellipsis.indentation-toggle ...
-    span.control.inline ]
-    span.control.inline ,
+  span.control.inline [
+  .row.indentation-content
+    .indentation.indentation-toggle
+      .indentation-line
+    .col-xs-12.col-sm-11.col-md-11.col-lg-11.col-xs-offset-0.col-sm-offset-1.col-md-offset-1.col-lg-offset-1
+      - for item in data
+        div
+          span.value "#{item}"
+          span.control.inline ,
+  span.indentation-ellipsis.indentation-toggle ...
+  span.control.inline ]
+  span.control.inline ,
     
