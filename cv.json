@@ -3,7 +3,7 @@
     "name": "Cesar Gonzalez Gonzalez",
     "address": "Konstanzerstrasse 13, 8280 Kreuzlingen",
     "tel": "004917699151664",
-    "email": "cesargonz1984@gmail.com",
+    "email": "link_cesargonz1984@gmail.com_mailto:cesargonz1984@gmail.com?Subject=Nice%20cv",
     "nationality": "Spanish"
   },
   "sumary": ["responsibility", "new ideas", "team player", "SQL", "Oracle PL/SQL", "Java",
@@ -13,9 +13,99 @@
     "loopback", "scalability", "devops"
   ],
   "experience": {
-    "it_engineering": {
+    "it_engineering@Foodo_AG": {
       "start": "June/2015",
-      "resume": "Warehouse Management Software using Nodejs and the framework Loopback with MongoDB."
+      "tech_stack": ["nodejs", "loopback", "MongoDB", "jenkins", "docker", "rancher.io", "elasticsearch", "digital ocean", "ubuntu", "git"],
+      "resume": ["I have worked as a backend developer in the implementation of a Warehouse Management Software using Nodejs and the framework Loopback with MongoDB",
+        "I have implemented with Nodejs and Elasticsearch a fulltext search web service.",
+        "I have configured and maintain an elasticsearch cluster.",
+        "I have configured and maintain a Continuos delivery pipeline with docker, jenkins, rancher.io and some crazy shell scripts.",
+        "I have configured and maintain a cluster of production servers and prepare the system to scale in case of a increase of traffic. For that task I have use docker and rancher.io, base on the master thesis that I wrote about the topic. All this cluster was hosted in the cloud.",
+        "I have configure and automatize all the routing and load balancers.",
+        "I have configure a logging system with the ELK stack, for monitoring and business statistics.",
+        "I have worked as a backend developer in the implementation of a Warehouse Management Software using Nodejs and the framework Loopback with MongoDB."
+      ]
+    },
+    "devops@HolidayCheck_AG": {
+      "start": "Jun/2014",
+      "end": "May/2015",
+      "tech_stack": ["mesos", "docker", "jenkins", "nodejs", "golang", "nginx", "chef", "shell", "scala", "mongo", "elasticsearch", "RabbitMQ", "tomcat", "git"],
+      "resume": ["I worked as Devops for a team",
+        "I was the responsable of the scrum team releases",
+        "I had to manage and mantein all the team enviroments",
+        "I created several dashboard to monitor the software quality and production services",
+        "I participate in the implementation of a continous delivery pipeline with jenkins and mesos"
+      ]
+    },
+    "software_developer@HolidayCheck_AG": {
+      "start": "Jan/2013",
+      "end": "May/2014",
+      "tech_stack": ["scala", "elasticsearch", "git", "tomcat", "mongodb", "mysql", "nginx", "rabbitMq", "akka"],
+      "resume": [
+        "I worked as a backend developer in the authentication service",
+        "I worked in the migration from legacy mono code to a SOA architecture",
+        "I worked in the implementation of serveral backend services",
+        "I was part of a scrum team"
+      ]
+    },
+    "junior_software_developer@HolidayCheck_AG": {
+      "start": "Jan/2013",
+      "end": "May/2014",
+      "tech_stack": ["scala", "elasticsearch", "git", "tomcat", "mongodb", "mysql", "nginx", "rabbitMq", "akka"],
+      "resume": [
+        "I worked in the migration from legacy monolytic code to a SOA architecture",
+        "I worked in the implementation of serveral backend services",
+        "I was with a scrum team"
+      ]
     }
-  }
+  },
+  "experties": {
+    "scala": "high",
+    "java": "high",
+    "nodejs": "high",
+    "javascript": "high",
+    "elasticsearch": "high",
+    "mongodb": "high",
+    "RabbitMQ": "high",
+    "sql": "medium",
+    "golang": "low",
+    "docker": "high",
+    "mesos": "medium",
+    "akka": "medium",
+    "maven": "medium",
+    "sbt": "medium",
+    "scrum": "medium",
+    "UML": "medium",
+    "linux/unix": "high",
+    "shell": "high",
+    "git": "high"
+  },
+  "languages": {
+    "spanish": "navitie (y olé)",
+    "english": "full professional proficiency",
+    "german": "limited working proficiency"
+  },
+  "education": {
+    "computer_Engineering": {
+      "period": "2002-2005/2008-2010",
+      "school": "Universidad Rey Juan Carlos",
+      "erasmus_year": {
+        "period": "2008-2009",
+        "school": "Helia / Helsinki Business Polytechnic"
+      }
+    },
+    "Technical_degree_telecomication": {
+      "period": "2006-2007",
+      "school": "IT-Instituto Prado Santo Domingo"
+    }
+  },
+  "publications": [{
+    "name": "migration from a monolitic application to a microservice architecture",
+    "slides": "link_link_http://slides.com/cesargonzalezgonzalez/microservicios"
+  }, "link_blog_http://blog.truhanes.co"],
+  "social_networks": [
+    "link_twitter_https://twitter.com/cesargonz1984",
+    "link_linkedin_https://ch.linkedin.com/in/cesar-gonzalez-93201230",
+    "link_github_https://gitlab.com/cgonzalezg"
+  ]
 }

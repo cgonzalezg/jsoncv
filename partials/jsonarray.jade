@@ -5,9 +5,22 @@ mixin JSONArray(data)
       .indentation-line
     .col-xs-12.col-sm-11.col-md-11.col-lg-11.col-xs-offset-0.col-sm-offset-1.col-md-offset-1.col-lg-offset-1
       - for item in data
-        div
-          span.value "#{item}"
-          span.control.inline ,
+        - if (typeof item === 'string')
+          - var link = item.split('_')
+          - if (link[0] === 'link')
+            div
+              span.value
+              | "
+              a(href=link[2]) #{link[1]}
+              | "
+              span.control.inline ,
+          - else
+            div
+              span.value "#{item}" 
+              span.control.inline ,
+        - else
+          .array-item.indentation-container.collapsed
+            +objectData(item)  
   span.indentation-ellipsis.indentation-toggle ...
   span.control.inline ]
   span.control.inline ,
