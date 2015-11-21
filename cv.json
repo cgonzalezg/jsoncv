@@ -38,7 +38,7 @@
       ]
     },
     "software_developer@HolidayCheck_AG": {
-      "start": "Jan/2013",
+      "start": "Jan/2014",
       "end": "May/2014",
       "tech_stack": ["scala", "elasticsearch", "git", "tomcat", "mongodb", "mysql", "nginx", "rabbitMq", "akka"],
       "resume": [
@@ -50,7 +50,7 @@
     },
     "junior_software_developer@HolidayCheck_AG": {
       "start": "Jan/2013",
-      "end": "May/2014",
+      "end": "Dic/2014",
       "tech_stack": ["scala", "elasticsearch", "git", "tomcat", "mongodb", "mysql", "nginx", "rabbitMq", "akka"],
       "resume": [
         "I worked in the migration from legacy monolytic code to a SOA architecture",
@@ -59,27 +59,45 @@
       ]
     }
   },
-  "experties": {
-    "scala": "high",
-    "java": "high",
-    "nodejs": "high",
-    "javascript": "high",
-    "elasticsearch": "high",
-    "mongodb": "high",
-    "RabbitMQ": "high",
-    "sql": "medium",
-    "golang": "low",
-    "docker": "high",
-    "mesos": "medium",
-    "akka": "medium",
-    "maven": "medium",
-    "sbt": "medium",
-    "scrum": "medium",
-    "UML": "medium",
-    "linux/unix": "high",
-    "shell": "high",
+  "experties": [{
+    "scala": "high"
+  }, {
+    "java": "high"
+  }, {
+    "nodejs": "high"
+  }, {
+    "javascript": "high"
+  }, {
+    "elasticsearch": "high"
+  }, {
+    "mongodb": "high"
+  }, {
+    "RabbitMQ": "high"
+  }, {
+    "sql": "medium"
+  }, {
+    "golang": "low"
+  }, {
+    "docker": "high"
+  }, {
+    "mesos": "medium"
+  }, {
+    "akka": "medium"
+  }, {
+    "maven": "medium"
+  }, {
+    "sbt": "medium"
+  }, {
+    "scrum": "medium"
+  }, {
+    "UML": "medium"
+  }, {
+    "linux/unix": "high"
+  }, {
+    "shell": "high"
+  }, {
     "git": "high"
-  },
+  }],
   "languages": {
     "spanish": "navitie (y olé)",
     "english": "full professional proficiency",
@@ -99,10 +117,13 @@
       "school": "IT-Instituto Prado Santo Domingo"
     }
   },
-  "publications": [{
-    "name": "migration from a monolitic application to a microservice architecture",
-    "slides": "link_link_http://slides.com/cesargonzalezgonzalez/microservicios"
-  }, "link_blog_http://blog.truhanes.co"],
+  "publications": {
+    "thesis": {
+      "name": "migration from a monolitic application to a microservice architecture",
+      "slides": "link_link_http://slides.com/cesargonzalezgonzalez/microservicios"
+    },
+    "blog": "link_http://blog.truhanes.co_http://blog.truhanes.co"
+  },
   "social_networks": [
     "link_twitter_https://twitter.com/cesargonz1984",
     "link_linkedin_https://ch.linkedin.com/in/cesar-gonzalez-93201230",
