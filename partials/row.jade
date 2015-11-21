@@ -2,7 +2,7 @@ mixin rowData(field, data)
   div
     span.attribute "#{field}"
     span.control.inline :
-    - var link = data.split('_')
+    - var link = data.split('~')
     - if (link[0] === 'link')
       span.value
       | "
