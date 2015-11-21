@@ -3,7 +3,7 @@
     "name": "Cesar Gonzalez Gonzalez",
     "address": "Konstanzerstrasse 13, 8280 Kreuzlingen",
     "tel": "004917699151664",
-    "email": "link_cesargonz1984@gmail.com_mailto:cesargonz1984@gmail.com?Subject=Nice%20cv",
+    "email": "link~cesargonz1984@gmail.com~mailto:cesargonz1984@gmail.com?Subject=Nice%20cv",
     "nationality": "Spanish"
   },
   "sumary": ["responsibility", "new ideas", "team player", "SQL", "Oracle PL/SQL", "Java",
@@ -99,7 +99,7 @@
     "git": "high"
   }],
   "languages": {
-    "spanish": "navitie (y olé)",
+    "spanish": "navitie",
     "english": "full professional proficiency",
     "german": "limited working proficiency"
   },
@@ -120,13 +120,24 @@
   "publications": {
     "thesis": {
       "name": "migration from a monolitic application to a microservice architecture",
-      "slides": "link_link_http://slides.com/cesargonzalezgonzalez/microservicios"
+      "slides": "link~link~http://slides.com/cesargonzalezgonzalez/microservicios"
     },
-    "blog": "link_http://blog.truhanes.co_http://blog.truhanes.co"
+    "blog": "link~http://blog.madacluster.tech~http://blog.madacluster.tech"
   },
   "social_networks": [
-    "link_twitter_https://twitter.com/cesargonz1984",
-    "link_linkedin_https://ch.linkedin.com/in/cesar-gonzalez-93201230",
-    "link_github_https://gitlab.com/cgonzalezg"
+    "link~twitter~https://twitter.com/cesargonz1984",
+    "link~linkedin~https://ch.linkedin.com/in/cesar-gonzalez-93201230",
+    "link~github~https://gitlab.com/cgonzalezg"
+  ],
+  "courses":[
+    "link~Functional Programming Principles in Scala~https://www.coursera.org/maestro/api/certificate/get_certificate?course_id=970457",
+    "akka system by typesafe",
+    "akka system by typesafe advance"
+  ],
+  "hobbies":[
+    "football",
+    "cycling",
+    "technology",
+    "playing saxophone"
   ]
 }
