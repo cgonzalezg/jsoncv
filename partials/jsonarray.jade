@@ -19,8 +19,8 @@ mixin JSONArray(data)
               span.value "#{item}" 
               span.control.inline ,
         - else
-          .array-item.indentation-container.collapsed
-            +objectData(item)  
+          .array-item.indentation-container
+            +objectData(item) 
   span.indentation-ellipsis.indentation-toggle ...
   span.control.inline ]
   span.control.inline ,

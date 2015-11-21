@@ -16,7 +16,7 @@ mixin objectData(objectData)
                 span.control.inline :
                 +JSONArray(objectData[key])
             - else
-              .array-item.indentation-container.collapsed
+              .array-item.indentation-container
                 span.attribute "#{key}"
                 span.control.inline : 
                 +objectData(objectData[key])
