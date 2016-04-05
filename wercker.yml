@@ -1,0 +1,80 @@
+# This references the default nodejs container from
+# the Docker Hub: https://registry.hub.docker.com/_/node/
+# If you want Nodesource's container you would reference nodesource/node
+# Read more about containers on our dev center
+# http://devcenter.wercker.com/docs/containers/index.html
+box: node
+
+build:
+  steps:
+    # A step that executes `npm install` command
+    - npm-install
+    # build dependencies for browser
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
+    - script:
+        name: build app
+        code: |
+          mkdir static/
+          cp Dockerfile static/
+          echo "ionic build browser"
+          node index.js > static/index.html
+    - script:
+        name: copy assets
+        code: |
+          cp -r assets static/
+    - script:
+        name: echo nodejs information
+        code: |
+          echo "node version $(node -v) running"
+          echo "npm version $(npm -v) running"- script:
+dev:
+  steps:
+    - npm-install
+    - script:
+        name: build app
+        code: |
+          rm -rf node_modules
+          rm -rf static
+          mkdir static/
+          cp Dockerfile static/
+          npm install -g http-server
+    - script:
+        name: copy assets
+        code: |
+          cp -r assets static/
+    - script:
+        name: create index.html
+        script: |
+          node index.js > static/index.html
+    - script:
+        name: serve app
+          http-server static/
+    - internal/watch:
+        code: node index.js > static/index.html
+        reload: true
+deploy:
+  steps:
+    - add-to-known_hosts:
+        hostname: $SERVER_HOSTNAME
+    - add-ssh-key:
+        keyname: DOKKU
+    - script:
+        name: Initialize new repository
+        code: |
+            cd static/
+            git init
+            git config --global user.name "cgonzalez"
+            git config --global user.email "cesargonz1984@gmail.com"
+            git remote add dokku dokku@$SERVER_HOSTNAME:cv
+    - script:
+        name: Add everything to the repository
+        code: |
+          cd static
+          git add .
+          git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
+    - script:
+        name: Push to dokku
+        code: |
+          cd static
+          git push dokku master -f

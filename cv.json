@@ -3,7 +3,7 @@
     "name": "Cesar Gonzalez Gonzalez",
     "address": "Konstanzerstrasse 13, 8280 Kreuzlingen",
     "tel": "004917699151664",
-    "email": "link~cesargonz1984@gmail.com~mailto:cesargonz1984@gmail.com?Subject=Nice%20cv",
+    "email": "link~cesar.gonzalez@protonmail.com~mailto:cesar.gonzalez@protonmail.com?Subject=Nice%20cv",
     "nationality": "Spanish"
   },
   "sumary": ["responsibility", "new ideas", "team player", "SQL", "Oracle PL/SQL", "Java",
@@ -15,7 +15,7 @@
   "experience": {
     "it_engineering@Foodo_AG": {
       "start": "June/2015",
-      "tech_stack": ["nodejs", "loopback", "MongoDB", "jenkins", "docker", "rancher.io", "elasticsearch", "digital ocean", "ubuntu", "git"],
+      "tech_stack": ["nodejs", "loopback", "MongoDB", "jenkins", "docker", "rancher.io", "elasticsearch", "digital ocean", "ubuntu", "git", "vagrant", "ubuntu", "taiga"],
       "resume": ["I have worked as a backend developer in the implementation of a Warehouse Management Software using Nodejs and the framework Loopback with MongoDB",
         "I have implemented with Nodejs and Elasticsearch a fulltext search web service.",
         "I have configured and maintain an elasticsearch cluster.",
@@ -29,9 +29,11 @@
     "devops@HolidayCheck_AG": {
       "start": "Jun/2014",
       "end": "May/2015",
-      "tech_stack": ["mesos", "docker", "jenkins", "nodejs", "golang", "nginx", "chef", "shell", "scala", "mongo", "elasticsearch", "RabbitMQ", "tomcat", "git"],
+      "tech_stack": ["mesos", "docker", "jenkins", "nodejs", "golang", "nginx", "chef", "shell", "scala", "mongo", "elasticsearch", "RabbitMQ", "tomcat", "git", "jira"],
       "resume": ["I worked as Devops for a team",
         "I was the responsable of the scrum team releases",
+        "I had worked with RabbitMQ configuring queues and sholves.",
+        "I have worked with Chef, creating different recipies",
         "I had to manage and mantein all the team enviroments",
         "I created several dashboard to monitor the software quality and production services",
         "I participate in the implementation of a continous delivery pipeline with jenkins and mesos"
@@ -42,7 +44,7 @@
       "end": "May/2014",
       "tech_stack": ["scala", "elasticsearch", "git", "tomcat", "mongodb", "mysql", "nginx", "rabbitMq", "akka"],
       "resume": [
-        "I worked as a backend developer in the authentication service",
+        "I worked as a backend developer implementing oauth2 services",
         "I worked in the migration from legacy mono code to a SOA architecture",
         "I worked in the implementation of serveral backend services",
         "I was part of a scrum team"
@@ -55,7 +57,7 @@
       "resume": [
         "I worked in the migration from legacy monolytic code to a SOA architecture",
         "I worked in the implementation of serveral backend services",
-        "I was with a scrum team"
+        "I was part of a scrum team"
       ]
     }
   },
@@ -72,7 +74,7 @@
   }, {
     "mongodb": "high"
   }, {
-    "RabbitMQ": "high"
+    "RabbitMQ": "medium"
   }, {
     "sql": "medium"
   }, {
@@ -95,11 +97,15 @@
     "linux/unix": "high"
   }, {
     "shell": "high"
+  },{
+    "marathon": "medium"
+  },{
+    "mesos": "low"
   }, {
     "git": "high"
   }],
   "languages": {
-    "spanish": "navitie",
+    "spanish": "native",
     "english": "full professional proficiency",
     "german": "limited working proficiency"
   },
@@ -130,13 +136,18 @@
     "link~github~https://gitlab.com/cgonzalezg"
   ],
   "courses":[
-    "link~Functional Programming Principles in Scala~https://www.coursera.org/maestro/api/certificate/get_certificate?course_id=970457",
-    "akka system by typesafe",
-    "akka system by typesafe advance"
+    "link~Functional Programming Principles in Scala~https://drive.google.com/file/d/0B4ClGv_KOK5bVHVRdGRnb21WM3c/view?usp=sharing",
+    "link~Fast Track To Akka With Scala by typesafe in 2014~https://www.typesafe.com/services/training",
+    "link~Advanced Akka With Scala by typesafe in 2014~https://www.typesafe.com/services/training",
+    "link~Core Elasticsearch by Elasticsearch in 2013~http://training.elastic.co~https://www.typesafe.com/services/training",
+    "link~Hands-On Workshop with Elasticsearch, Logstash & Kibana by Elasticsearch in 2015~http://training.elastic.co~https://www.typesafe.com/services/training"
   ],
   "hobbies":[
     "football",
+    "basketball",
+    "politics",
     "cycling",
+    "Conquer the world playing CIV",
     "technology",
     "playing saxophone"
   ]

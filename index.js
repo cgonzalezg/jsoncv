@@ -7,3 +7,5 @@ var htmlOutput = fn({
 });
 
 console.log(htmlOutput);
+// TODO use gulp for build
+// TODO change css
