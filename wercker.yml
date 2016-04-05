@@ -9,12 +9,15 @@ build:
   steps:
     # A step that executes `npm install` command
     - npm-install
+    # build dependencies for browser
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
     - script:
         name: build app
         code: |
           mkdir static/
-          cp -r .well-known/ static/
-          cp Dockerfile static/
+          cp .env static/
+          cp .static static/
           echo "ionic build browser"
           node index.js > static/index.html
     - script:
