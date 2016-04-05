@@ -30,12 +30,12 @@ build:
           echo "npm version $(npm -v) running"- script:
 dev:
   steps:
-    - npm-install
     - script:
         name: build app
         code: |
           rm -rf node_modules
           rm -rf static
+          npm install
           mkdir static/
           cp Dockerfile static/
           npm install -g http-server
@@ -45,13 +45,14 @@ dev:
           cp -r assets static/
     - script:
         name: create index.html
-        script: |
+        code: |
+          ls
           node index.js > static/index.html
-    - script:
-        name: serve app
-          http-server static/
     - internal/watch:
-        code: node index.js > static/index.html
+        code: |
+          ls
+          node index.js > static/index.html
+          http-server static/
         reload: true
 deploy:
   steps:

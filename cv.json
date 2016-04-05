@@ -10,11 +10,12 @@
     "software development", "UML", "software engineering", "Linux", "Unix", "Scala", "Play framework",
     "Elasticsearch", "MongoDB", "NoSql", "RabbitMQ", "SOA", "Test Driven Development", "Tomcat", "SBT",
     "Maven", "git", "Scrum", "docker", "mesos", "marathon", "nodejs", "rancher.io", "microservices", "12 factor",
-    "loopback", "scalability", "devops"
+    "loopback", "scalability", "devops", "typescript"
   ],
   "experience": {
     "it_engineering@Foodo_AG": {
       "start": "June/2015",
+      "end": "March/2016",
       "tech_stack": ["nodejs", "loopback", "MongoDB", "jenkins", "docker", "rancher.io", "elasticsearch", "digital ocean", "ubuntu", "git", "vagrant", "ubuntu", "taiga"],
       "resume": ["I have worked as a backend developer in the implementation of a Warehouse Management Software using Nodejs and the framework Loopback with MongoDB",
         "I have implemented with Nodejs and Elasticsearch a fulltext search web service.",
