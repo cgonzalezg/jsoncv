@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "version": "5.4.16",
-  "description": "",
+  "description": "CV in json format",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
