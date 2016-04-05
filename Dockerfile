@@ -1,3 +1,4 @@
-FROM nginx
-COPY . /usr/share/nginx/html
-EXPOSE 80
+FROM python:alpine
+WORDIR /app
+ADD . /app
+CMD [ "python", "-m", "http.server", "5000"]
