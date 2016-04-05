@@ -7,11 +7,13 @@ box: node
 
 build:
   steps:
+    # A step that executes `npm install` command
     - npm-install
     - script:
         name: build app
         code: |
           mkdir static/
+          cp .well-know/ static/
           cp Dockerfile static/
           echo "ionic build browser"
           node index.js > static/index.html
