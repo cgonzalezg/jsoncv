@@ -29,6 +29,11 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"- script:
+  after-steps:
+        - wantedly/pretty-slack-notify:
+            webhook_url: $SLACK_WEBHOOK_URL
+            username: jsoncv
+            notify_on: "failed"
 dev:
   steps:
     - script:
@@ -80,3 +85,7 @@ deploy:
         code: |
           cd static
           git push dokku master -f
+  deploy:
+    after-steps:
+        - wantedly/pretty-slack-notify:
+            webhook_url: $SLACK_WEBHOOK_URL
