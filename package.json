@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "5.4.16",
+  "version": "16.4.9",
   "description": "CV in json format",
   "main": "index.js",
   "scripts": {
