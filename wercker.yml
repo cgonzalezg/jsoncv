@@ -33,7 +33,7 @@ build:
     - slack-notifier:
         url: $SLACK_URL
         channel: notifications
-        username: deploy
+        username: build
         notify_on: failed
 dev:
   steps:
