@@ -1,1 +1,6 @@
-:5000
+0.0.0.0:5000
+root /var/www/html
+
+log stdout
+
+errors stdout
