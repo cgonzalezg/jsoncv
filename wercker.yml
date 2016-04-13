@@ -15,15 +15,13 @@ build:
     - script:
         name: build app
         code: |
-          mkdir static/
-          cp .env static/
-          cp .static static/
+          mkdir server/static/
           echo "ionic build browser"
-          node index.js > static/index.html
+          node index.js > server/static/index.html
     - script:
         name: copy assets
         code: |
-          cp -r assets static/
+          cp -r assets server/static/
     - script:
         name: echo nodejs information
         code: |
@@ -41,10 +39,9 @@ dev:
         name: build app
         code: |
           rm -rf node_modules
-          rm -rf static
+          rm -rf server/static
           npm install
-          mkdir static/
-          cp Dockerfile static/
+          mkdir server/static/
           npm install -g http-server
     - script:
         name: copy assets
@@ -70,7 +67,7 @@ deploy:
     - script:
         name: Initialize new repository
         code: |
-            cd static/
+            cd server
             git init
             git config --global user.name "cgonzalez"
             git config --global user.email "cesargonz1984@gmail.com"
@@ -78,13 +75,13 @@ deploy:
     - script:
         name: Add everything to the repository
         code: |
-          cd static
+          cd server
           git add .
           git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
     - script:
         name: Push to dokku
         code: |
-          cd static
+          cd server
           git push dokku master -f
   after-steps:
     - slack-notifier:
