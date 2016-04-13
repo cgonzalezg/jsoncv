@@ -1,2 +1,1 @@
-FROM joshix/caddy
-COPY . /var/www/html
+FROM golang:alpine
